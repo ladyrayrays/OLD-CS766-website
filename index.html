@@ -106,8 +106,7 @@
                         <h3 class="mb-0">Dataset</h3>
                         <p class="lead mb-5">The dataset we used was the Real-world Tomato Image Dataset for Deep Learning and Computer Vision Applications 
                         Involving Precision Agriculture which had a great deal of benefits.[8] This data set contains roughly 1,750 images of tomatos in various on the vine 
-                        stages of growth which was then augmented utilizing image transformations (specifically rotation and mirroring).
-                        We then manually labeled each image through a Matlab script and
+                        stages of growth. We then manually labeled each image through a Matlab script and
                         downscaled the resolution by a factor of 100 as the images were too large to process in an efficient manner. An image could be labeled with any
                         of the following: (1)blossom/bud; (3)beginning to ripen(green/yellow); (3)ripe(orange/red).
                         </p>
@@ -118,7 +117,9 @@
             <section class="resume-section" id="Implementation">
                 <div class="resume-section-content">
                     <h2 class="mb-0">Implementation Details</h2>
-                    <p class="lead mb-5">We implemented our solution by...</p>
+                    <p class="lead mb-5">
+                        We implemented our solution by...
+                    </p>
                 </div>
             </section>
             <hr class="m-0" />
@@ -126,7 +127,9 @@
             <section class="resume-section" id="Results">
                 <div class="resume-section-content">
                     <h2 class="mb-0">Results</h2>
-                    <p class="lead mb-5"> Our results are as follows...</p>
+                    <p class="lead mb-5">
+                        Our results are as follows...
+                    </p>
                 </div>
             </section>
             <hr class="m-0" />
@@ -134,10 +137,22 @@
             <section class="resume-section" id="Discussion">
                 <div class="resume-section-content">
                     <h2 class="mb-0">Discussion</h2>
-                    <h3 class="mb-0">What we learned</h3>
-                    <p class="lead mb-5"> We learned....</p>
-                    <h3 class="mb-0">Future prospects</h3> 
-                    <p class="lead mb-5"> In the future....</p>
+                    <h3 class="mb-0">Challenges & Lessons</h3>
+                    <p class="lead mb-5"> 
+                        Overall, we are satisfied with the performance we were able to achieve on image classification. Some of the main take aways we had from this project 
+                        inluded the exploration into CNN functionality and implementation. One problem we encountered was the limited data set size which lead to poor 
+                        convergence. To address this we augmented the data set utlizing image transformations (specifically rotation and mirroring). Another issue
+                        that was encountered was the cases were multiple classes could be identified within an image as previously mentioned. With our fixed labeling
+                        strategy of an image only belonging to one class we were unable to address this, but it might be an oppurtunity for future work.
+                    </p>
+                    <p class="lead mb-5">
+                        Beyond improvements in accuracy,
+                        there a few ways we can consider building future work upon this project. Once a data set is currated we can consider additional classification
+                        goals such as being able to identify damaged, diseased, or overripe classes. We could extend this to classification between different tomato
+                        varieties. Beyond this, we could even consider applying these techniques to other forms of produce such as strawberries or bananas. Additionally,
+                        we could work on integrating non-visual data to be used in conjunction with the image data such as the technologies identified in the Background
+                        section.
+                    </p>
                 </div>
             </section>
             <hr class="m-0" />
