@@ -118,7 +118,16 @@
                 <div class="resume-section-content">
                     <h2 class="mb-0">Implementation Details</h2>
                     <p class="lead mb-5">
-                        We implemented our solution by...
+                        As previously mentioned our approach to this problem was to implement a Convolutional Neural Network image classifier trained on the data set 
+                        we obtained, labeled, and augmented. We decided on utilizing a CNN due to their utility in image classification, which differs from
+                        other work has been done utilizing Feed-Forward Neural Networks[10]. Beyond the introduction to neural networks in lecture we leveraged the Python
+                        library TensorFlow as our means of implementing the CNN classifier and got acquainted with the framework via a tutorial[11]. The data set was split into 
+                        training, validation, and test subsets. The training and validation data sets were each used to refine the CNN model which was then compared
+                        against the held out testing data set. After evaluating the test accuracy the model's hyper-parameters such as train-test split, number and
+                        size of convolutional layers, and epoch count were varied and the resulting models test accuracy was compared to the previous. After several iterations
+                        we settled on a set of hyper-parameters that gave us satisfactory performance. In addition to measuring the test accuracy, a sampling of misclassifications 
+                        was taken at each iteration and qualitatively judged to see if we would expect the images to be reasonablly between multiple classes.
+                        
                     </p>
                 </div>
             </section>
