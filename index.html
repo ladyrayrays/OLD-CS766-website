@@ -128,8 +128,23 @@
                 <div class="resume-section-content">
                     <h2 class="mb-0">Results</h2>
                     <p class="lead mb-5">
-                        Our results are as follows...
+                        Overall, our latest trained model was able to achieve <strong>90.53%</strong> test accuracy on images held out during training/validation.
+                        Below are some selected examples of test images that were misclassified and the associated correct/incorrect labels. Additionally, in Figure 1
+                        we can see that the confusion matrix has little to no errors identified between the first and third classes. This would suggest that most of 
+                        the classification errors may arise from border/transitory cases between the classes.
                     </p>
+                    
+                    <img src="./assets/img/misclass_1.png" alt="Misclassification 1">
+                    <div>Image 1. Example of a misclassification in the test data set.</div>
+                    <img src="./assets/img/misclass_2.png" alt="Misclassification 2">
+                    <div>Image 2. Example of a misclassification in the test data set.</div>
+                    <img src="./assets/img/misclass_3.png" alt="Misclassification 3">
+                    <div>Image 3. Example of a misclassification in the test data set.</div>
+
+                    <img src="./assets/img/conf_mat.png" alt="Confusion Matrix">
+                    <div>Figure 1. Confusion matrix between the three classes in the test data set.</div>
+
+                    
                 </div>
             </section>
             <hr class="m-0" />
