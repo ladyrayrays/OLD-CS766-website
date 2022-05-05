@@ -50,10 +50,10 @@
                     </h3>
                     <p class="lead mb-5">The problem of identifying produce and then determining the ripeness is important in many fields.
                         For starters looking at the agriculture market, this process can be used in a production line to determine if batches of  a 
-                        certain produce are not fit to be sold. For example when putting strawberries in a plastic container that will be 
-                        be sent to stores. If it could be determined that said strawberries were far too ripe, they could be discarded early. This fixes the issue 
-                        of a package of strawberries arriving at a store with the majority of them already starting to rot or having a very short shelf life. Thus
-                        saving the store capital from strawberries experiing too fast. 
+                        certain produce are not fit to be sold. For example when putting tomatoes in a plastic container that will be 
+                        be sent to stores. If it could be determined that said tomatoes were far too ripe, they could be discarded early. This fixes the issue 
+                        of a package of tomatoes arriving at a store with the majority of them already starting to rot or having a very short shelf life. Thus
+                        saving the store capital from tomatoes experiing too fast. 
                         <br><br>
                         Another area this problem is important to, is the field of accessibility. Individuals who cannot rely on their sight face the issue of
                         determining if food has gone bad, oftentimes they rely on smell and touch. The ability to take a photo of produce and identify if
@@ -82,7 +82,13 @@
                        setting or on an even smaller scale there has been some smartphone integration for specific evaluations. One example of this is
                        Amazon Fresh’s ‘Just Walk Out’ technology that uses computer vision to track grocery items taken. In regards to recent publications 
                        there have been some recent papers of interest that leverage convolutional neural networks (sometimes pre-trained) to classify
-                       images of certain varieties of produce.[1,2] </p>
+                       images of certain varieties of produce.[1,2] Other state-of-the-art technologies include:
+                       <ul>
+                           <li>Magnetic resonance imaging [5]</li>
+                           <li>Laser-scattering imaging [6]</li>
+                           <li>Infrared imaging [7]</li>
+                        </ul>                    
+                    </p>
                 </div>
             </section>
             <hr class="m-0" />
@@ -90,18 +96,18 @@
             <section class="resume-section" id="Method">
                 <div class="resume-section-content">
                     <h2 class="mb-0">Method</h2>
-                    <p class="lead mb-5">Our initial plan was to explore similar implementations to existing solutions, in regards to other agricultural quality
-                        imaging. This meant leveraging some of the edge/color detection content that was covered in lecture over the course of the
-                        semester. We then explored the utilization of a convolutional neural network to assist with quality/ripeness classification.
-                        If we determine that implementation of a neural network with sufficient training is infeasible due to resource constraints or poor
-                        performance we would consider focusing more so on the traditional detection methods we are exploring in class. In order to train this
-                        algorithm we tried to identify an existing image dataset with sufficient data samples. For insights and examples we explored a text 
+                    <p class="lead mb-5">We explored the utilization of a convolutional neural network to assist with quality/ripeness classification in contrast to 
+                        existing Feed-Forward Approaches[10]. In particularly, we chose a CNN model to evaluate how well a purely visual system could work.
+                        In order to train this model we tried to identify an existing image dataset with sufficient data samples. 
+                        For insights and examples we explored a text 
                         through the university library system that aligns with this project.[3] For feasibility, the potential traits we
                         were focused on for identification were color and shape. </p>
 
                         <h3 class="mb-0">Dataset</h3>
                         <p class="lead mb-5">The dataset we used was the Real-world Tomato Image Dataset for Deep Learning and Computer Vision Applications 
-                        Involving Precision Agriculture which had a great deal of benefits.[4] We then manually labeled each image through a Matlab script and
+                        Involving Precision Agriculture which had a great deal of benefits.[8] This data set contains roughly 1,750 images of tomatos in various on the vine 
+                        stages of growth which was then augmented utilizing image transformations (specifically rotation and mirroring).
+                        We then manually labeled each image through a Matlab script and
                         downscaled the resolution by a factor of 100 as the images were too large to process in an efficient manner. An image could be labeled with any
                         of the following: (1)blossom/bud; (3)beginning to ripen(green/yellow); (3)ripe(orange/red).
                         </p>
